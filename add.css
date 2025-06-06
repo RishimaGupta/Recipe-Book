@@ -1,0 +1,46 @@
+body {
+  background-image: url(edit_bg.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+form {
+  font-family: Georgia;
+  padding: 20px 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #d5bd98c9;
+  border-radius: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type=text], textarea, input[type=number] {
+  width: 100%;
+  padding: 7px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  font-family: Georgia;
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 15px;
+  background: #954211;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Georgia;
+}

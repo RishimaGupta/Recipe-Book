@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Book - Welcome</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Preloaded home page -->
+  <iframe id="homeFrame" src="home.html"></iframe>
+
+  <!-- Cover page with flip effect -->
+  <div class="book" id="bookCover">
+    <div class="page" id="coverPage">
+      <div class="shadow"></div>
+      <a id="turnPageArrow" class="arrow">&#10148;</a>
+    </div>
+  </div>
+
+  <audio id="pageSound" src="page-turn.mp3"></audio>
+  <script src="index.js"></script>
+</body>
+</html>

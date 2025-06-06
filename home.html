@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine&family=Butterfly+Kids&family=Princess+Sofia&family=Quintessential&display=swap" rel="stylesheet">
+  <title>Recipe Book - Home</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <button id="addRecipeBtn">Add New Recipe</button> 
+  <header>
+    <div id="searchBar">
+      <input type="text" id="searchInput" placeholder="Search recipes..." />
+      <button id="searchBtn">Search</button>
+    </div>
+  </header>
+
+  <div id="recipesContainer"></div>
+  <div id="recipeModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <h2 id="modalTitle" class="modal-title"></h2>
+      <p id="modalDescription" class="modal-description"></p>
+      <img id="modalImage" src="" alt="Recipe Image" class="modal-img"/>
+      
+      <div class="info-icons">
+        <span id="modalServings"><i class="fa fa-cutlery"></i> 2 servings</span>
+        <span id="modalTime"><i class="fa fa-clock-o"></i> 15 minutes</span>
+      </div>
+
+      <div class="modal-flex">
+        <div class="modal-ingredients">
+          <h3>INGREDIENTS</h3>
+          <ul id="modalIngredients"></ul>
+        </div>
+        <div class="modal-directions">
+          <h3>DIRECTIONS</h3>
+          <ol id="modalPreparation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="home.js"></script>
+</body>
+</html>

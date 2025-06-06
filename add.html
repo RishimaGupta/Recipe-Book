@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine&family=Butterfly+Kids&family=Princess+Sofia&family=Quintessential&display=swap" rel="stylesheet">
+  <title>Add Recipe</title>
+  <link rel="stylesheet" href="add.css">
+</head>
+<body>
+  <form id="addRecipeForm">
+    <label for="recipeName">Recipe Name</label>
+    <input type="text" id="recipeName" required />
+
+    <label for="description">Description</label>
+    <textarea id="description" rows="2"></textarea>
+
+    <label for="ingredients">Ingredients (comma-separated)</label>
+    <textarea id="ingredients" rows="3" placeholder="e.g. 2 eggs, 1 cup flour, 1/2 cup sugar" required></textarea>
+
+    <label for="preparation">Preparation Steps</label>
+    <textarea id="preparation" rows="5" required></textarea>
+
+    <label for="prepTime">Preparation Time (in minutes)</label>
+    <input type="number" id="prepTime" required />
+
+    <label for="servings">Servings</label>
+    <input type="number" id="servings" required />
+
+    <label for="recipeImage">Image</label>
+    <input type="file" id="recipeImage" accept="image/*" required />
+
+    <button type="submit">Add Recipe</button>
+  </form>
+
+  <script src="add.js"></script>
+</body>
+</html>
