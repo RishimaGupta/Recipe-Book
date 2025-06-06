@@ -9,7 +9,6 @@ This is a multi-page interactive digital Recipe Book built using only HTML, CSS,
 * *Live Search Functionality:* Instantly filter recipes by title or ingredients with a responsive search bar. <br>
 * *Recipe Cards with Modal View:* Recipes are displayed as cards; clicking a card opens a modal showing full details with image, ingredients, and steps. <br>
 * *Persistent Storage:* All recipes are stored using `localStorage`, so they remain available even after refreshing or closing the browser. <br>
-* *Responsive Design:* Fully optimized layout that adapts beautifully to both desktop and mobile screens. <br>
 * *Smooth Page Transitions:* Delayed navigation and transition effects enhance the book-like experience when turning pages. <br>
 
 ## How to Use <br>
@@ -35,4 +34,3 @@ This project focused on enhancing front-end skills and UX/UI design using vanill
 * *Modular File Structure:* HTML, CSS, and JS are organized per page for maintainability and clarity. <br>
 * *Custom Modal Implementation:* A lightweight, reusable modal system built from scratch using only HTML, CSS, and JavaScript. <br>
 * *Offline Usability:* Fully functional with no server or API required, thanks to localStorage. <br>
-* *Responsive Grid Layout:* Recipes are displayed in a flexible grid that adapts cleanly to screen size changes. <br>
