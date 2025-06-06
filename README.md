@@ -27,7 +27,6 @@ This is a multi-page interactive digital Recipe Book built using only HTML, CSS,
 * *JavaScript (ES6+):* DOM manipulation, localStorage handling, form validation, modal logic, and dynamic content rendering. <br>
 
 ## Development Highlights <br>
-This project focused on enhancing front-end skills and UX/UI design using vanilla technologies. Major highlights include: <br>
 * *Realistic Page Flip Animation:* CSS-based animation with delayed JavaScript redirection simulates a book-opening experience. <br>
 * *Form Handling & Validation:* JavaScript ensures all required recipe data is collected and validated before saving. <br>
 * *Base64 Image Encoding:* Uploaded recipe images are converted and stored in base64 format in localStorage for portability. <br>
