@@ -1,4 +1,4 @@
-# Recipe-Book-Web-App <br>
+# Recipe Book <br>
 ## Project Overview <br>
 This is a multi-page interactive digital Recipe Book built using only HTML, CSS, and JavaScript — no frameworks or libraries required. Add, view, and search through your favorite recipes in a stylish and animated book-like interface that stores everything right in your browser using localStorage. <br>
 
