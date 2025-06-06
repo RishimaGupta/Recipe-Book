@@ -1,24 +1,31 @@
+// Convert an image file to a Base64 string
 function getBase64(file) {
   return new Promise((resolve, reject) => {
-    const reader = new FileReader();
-    reader.onload = () => resolve(reader.result);
-    reader.onerror = error => reject(error);
-    reader.readAsDataURL(file);
+    const reader = new FileReader(); // Built-in JS class to read files
+
+    reader.onload = () => resolve(reader.result); // When read is successful
+    reader.onerror = error => reject(error);      // If there's an error
+
+    reader.readAsDataURL(file); // Convert file to base64-encoded string
   });
 }
 
+// Load all recipes from localStorage, or return an empty array if none exist
 function loadRecipes() {
   const stored = localStorage.getItem('recipes');
-  return stored ? JSON.parse(stored) : [];
+  return stored ? JSON.parse(stored) : []; // Convert JSON string to object/array
 }
 
+// Save all recipes to localStorage as a JSON string
 function saveRecipes(recipes) {
   localStorage.setItem('recipes', JSON.stringify(recipes));
 }
 
+// Event listener for form submission
 document.getElementById('addRecipeForm').addEventListener('submit', async (e) => {
-  e.preventDefault();
+  e.preventDefault(); // Prevent default form behavior (page reload)
 
+  // Grab and clean up all form input values
   const name = document.getElementById('recipeName').value.trim();
   const description = document.getElementById('description').value.trim();
   const ingredients = document.getElementById('ingredients').value.split(',').map(i => i.trim());
@@ -27,13 +34,16 @@ document.getElementById('addRecipeForm').addEventListener('submit', async (e) =>
   const servings = document.getElementById('servings').value;
   const imageFile = document.getElementById('recipeImage').files[0];
 
+  // Check for any missing required fields
   if (!name || !description || !preparation || !ingredients.length || !prepTime || !servings || !imageFile) {
     alert('Please fill in all fields.');
     return;
   }
 
+  // Convert image to base64
   const imageBase64 = await getBase64(imageFile);
 
+  // Create a new recipe object
   const newRecipe = {
     name,
     description,
@@ -44,13 +54,15 @@ document.getElementById('addRecipeForm').addEventListener('submit', async (e) =>
     image: imageBase64
   };
 
+  // Load, update, and save the recipe list
   const recipes = loadRecipes();
   recipes.push(newRecipe);
   saveRecipes(recipes);
 
+  // Notify the user and navigate to home page with fade-out animation
   alert('Recipe added successfully!');
   document.body.classList.add('fade-out');
-    setTimeout(() => {
-        window.location.href = 'home.html';
-    }, 500);
+  setTimeout(() => {
+    window.location.href = 'home.html'; // Redirect after animation
+  }, 500);
 });
