@@ -77,8 +77,8 @@ html, body {
 /* Arrow button styles */
 .arrow {
   position: absolute;
-  bottom: 90px;
-  right: 700px;
+  bottom: 10vh;              /* Responsive bottom spacing */
+  right: 47vw; 
   font-size: 3rem;
   color: rgb(69, 45, 45);
   cursor: pointer;
