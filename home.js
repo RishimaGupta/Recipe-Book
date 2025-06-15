@@ -55,15 +55,15 @@ function showRecipeModal(recipe) {
   document.getElementById('recipeModal').classList.remove('hidden');
 }
 
-document.getElementById('searchBtn').addEventListener('click', () => {
-  const query = document.getElementById('searchInput').value.toLowerCase().trim();
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  const query = e.target.value.toLowerCase().trim();
 
   const filtered = allRecipes.filter(recipe =>
     recipe.name.toLowerCase().includes(query) ||
     recipe.description.toLowerCase().includes(query) ||
     recipe.ingredients.some(ing => ing.toLowerCase().includes(query))
   );
-
+  
   renderRecipes(filtered);
 });
 
