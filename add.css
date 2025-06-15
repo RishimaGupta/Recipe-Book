@@ -1,0 +1,52 @@
+/* Background Styling */
+body {
+  background-image: url(edit_bg.png); /* Background image for the page */
+  background-attachment: fixed;        /* Keeps the background in place on scroll */
+  background-repeat: no-repeat;        /* Prevents image repetition */
+  background-size: cover;              /* Ensures full background coverage */
+  padding: 150px;                      /* Space around the content */
+}
+
+/* Fade-out animation for smooth page transition */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease; /* Smooth fade-out effect */
+}
+
+/* Main Form Styling */
+form {
+  font-family: Georgia;              /* Serif font for a classic look */
+  padding: 20px 40px;                /* Inner spacing */
+  max-width: 600px;                  /* Limits form width */
+  margin: 0 auto;                    /* Center form horizontally */
+  background: #d5bd98c9;             /* Soft beige background with transparency */
+  border-radius: 10px;               /* Rounded corners */
+}
+
+/* Label Styling */
+label {
+  display: block;                    /* Makes labels appear on their own lines */
+  margin-top: 10px;                  /* Space above each label */
+}
+
+/* Input & Textarea Fields Styling */
+input[type=text], textarea, input[type=number] {
+  width: 100%;                       /* Full width */
+  padding: 7px;                      /* Inner padding */
+  margin-top: 5px;                   /* Space between label and input */
+  border: 1px solid #ccc;            /* Light gray border */
+  font-family: Georgia;              /* Matches the form font */
+  border-radius: 4px;                /* Rounded input edges */
+}
+
+/* Submit Button Styling */
+button {
+  margin-top: 15px;                  /* Space above the button */
+  background: #954211;              /* Dark orange-brown color */
+  color: white;                      /* White text */
+  border: none;                      /* No border */
+  padding: 10px 20px;                /* Button padding */
+  border-radius: 5px;                /* Rounded button */
+  cursor: pointer;                   /* Pointer cursor on hover */
+  font-family: Georgia;              /* Consistent font */
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Book - Welcome</title>
+  <!-- Link to main stylesheet -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Preload the home page in a hidden iframe beneath the cover -->
+  <iframe id="homeFrame" src="home.html"></iframe>
+
+  <!-- Book cover element with flip animation -->
+  <div class="book" id="bookCover">
+    <div class="page" id="coverPage">
+      <!-- Shadow overlay for 3D flip effect -->
+      <div class="shadow"></div>
+      <!-- Arrow icon user clicks to flip the page -->
+      <a id="turnPageArrow" class="arrow">&#10148;</a>
+    </div>
+  </div>
+
+  <!-- Sound effect for page turn -->
+  <audio id="pageSound" src="page-turn.mp3"></audio>
+
+  <!-- JavaScript controlling flip animation and sound -->
+  <script src="index.js"></script>
+</body>
+</html>
