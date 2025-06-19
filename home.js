@@ -56,8 +56,8 @@ function showRecipeModal(recipe) {
   document.getElementById('modalTitle').textContent = recipe.name;
   document.getElementById('modalDescription').textContent = recipe.description;
   document.getElementById('modalImage').src = recipe.image;
-  document.getElementById('modalServings').innerHTML = `<i class="fa fa-cutlery"></i> ${recipe.servings} servings`;
-  document.getElementById('modalTime').innerHTML = `<i class="fa fa-clock-o"></i> ${recipe.prepTime} minutes`;
+  document.getElementById('modalServings').innerHTML = `<i class="fa-solid fa-utensils"></i> ${recipe.servings} servings`;
+  document.getElementById('modalTime').innerHTML = `<i class="fa-solid fa-stopwatch"></i> ${recipe.prepTime} minutes`;
 
   // Populate the ingredients list.
   const ingredientsList = document.getElementById('modalIngredients');

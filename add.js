@@ -10,17 +10,6 @@ function getBase64(file) {
   });
 }
 
-/* // Load all recipes from localStorage, or return an empty array if none exist
-function loadRecipes() {
-  const stored = localStorage.getItem('recipes');
-  return stored ? JSON.parse(stored) : []; // Convert JSON string to object/array
-}
-
-// Save all recipes to localStorage as a JSON string
-function saveRecipes(recipes) {
-  localStorage.setItem('recipes', JSON.stringify(recipes));
-}
- */
 // Event listener for form submission
 document.getElementById('addRecipeForm').addEventListener('submit', async (e) => {
   e.preventDefault(); // Prevent default form behavior (page reload)
