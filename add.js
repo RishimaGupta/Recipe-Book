@@ -62,3 +62,9 @@ document.getElementById('addRecipeForm').addEventListener('submit', async (e) =>
     alert("Something went wrong while saving the recipe.");
   }
 });
+document.getElementById('backBtn').addEventListener('click', () => {
+  document.body.classList.add('fade-out'); // optional smooth transition
+  setTimeout(() => {
+    window.location.href = 'home.html';
+  }, 300); // matches your transition duration
+});
